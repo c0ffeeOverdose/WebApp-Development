@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment01</title>
+    <style>
+        label {
+            font-weight: bold;
+        }
+        form {
+            background-color: #f7ebd9;
+            margin: 0 auto;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="text-align: center;">แบบสอบถาม</h3>
+    <hr>
+    <form style="background-color:#f7ebd9;">
+        <label>ข้อมูลผู้ตอบแบบสอบถาม</label><br>
+        <label>ชื่อ-นามสกุล</label>
+        <input type="text" name="name" size="21" required><br>
+        <label>รหัสนักศึกษา</label>
+        <input type="text" name="stdid" size="20" required><br>
+        <label>เพศ</label>
+        <input type="radio" name="gender" value="male" required> ชาย
+        <input type="radio" name="gender" value="female" required> หญิง<br>
+        <label">สังกัดคณะ</label>
+        <select name="faculty" id="faculty" size="11" required>
+            <option value="science">วิทยาศาสตร์</option>
+            <option value="computer science">วิยาการคอมพิวเตอร์</option>
+            <option value="education">ครุศาสตร์</option>
+            <option value="business administration">บริหารธุรกิจและการจัดการ</option>
+            <option value="humanities">มนุษยศาสตร์</option>
+            <option value="industrial technology">เทคโนโลยีอุตสาหกรรม</option>
+            <option value="agriculture">เกษตรศาสตร์</option>
+            <option value="nursing">พยาบาลศาสตร์</option>
+            <option value="public health">สาธารณสุขศาสตร์</option>
+            <option value="traditional and alternative medicine">แพทย์แผนไทยและแพทย์ทางเลือก</option>
+            <option value="law">นิติศาสตร์</option>
+        </select><br>
+        <label>แม่สีที่ชอบ</label><br>
+        <input type="checkbox" name="liked color" id="red"> สีแดง
+        <input type="checkbox" name="liked color" id="green"> สีเขียว
+        <input type="checkbox" name="liked color" id="blue"> สีน้ำเงิน
+        <br>
+        <label>ผลไม้ที่ชอบ</label><br>
+        <input type="checkbox" name="liked fruit" id="mango"> มะม่วง
+        <input type="checkbox" name="liked fruit" id="custard-apple"> น้อยหน่า
+        <input type="checkbox" name="liked fruit" id="durian"> ทุเรียน
+        <br>
+        <input type="checkbox" name="liked fruit" id="longan"> ลำใย
+        <input type="checkbox" name="liked fruit" id="guava"> ฝรั่ง
+        <input type="checkbox" name="liked fruit" id="watermelon"> แตงโม
+        <br>
+        <label>อาหารที่ชื่นชอบ</label><br>
+        <input type="checkbox" name="liked food" id="tom-yum-goong"> ต้มยำกุ้ง
+        <input type="checkbox" name="liked food" id="kai-jeow-moo-sub"> ไข่เจียวหมูสับ
+        <input type="checkbox" name="liked food" id="kaeng-kha-gai"> แกงข่าไก่
+        <br>
+        <input type="checkbox" name="liked food" id="kaeng-khiao-wan-gai"> แกงเขียวหวานไก่
+        <input type="checkbox" name="liked food" id="pad-thai"> ผัดไทย
+        <input type="checkbox" name="liked food" id="rad-na-mee-krob"> ราดหน้าหมี่กรอบ
+        <br>
+        <input type="submit" value="บันทึก" style="margin-top: 2%; margin-left: 45%;">
+    </form>
+</body>
+</html>
