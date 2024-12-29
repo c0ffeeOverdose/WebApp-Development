@@ -62,4 +62,4 @@ def cal_mod(a, b):
     return text
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
